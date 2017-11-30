@@ -38,6 +38,13 @@ void hwUpwardsCompatibility() {
         setSetting("relayGPIO", 1, 5);
         setSetting("relayType", 1, RELAY_TYPE_NORMAL);
 
+    #elif defined(WEMOS_D1_MINI_DHT22SHIELD)
+
+        setSetting("board", 3);
+        setSetting("ledGPIO", 1, 2);
+        setSetting("ledLogic", 1, 1);
+        setSetting("btnGPIO", 1, 0);
+
     #elif defined(ITEAD_SONOFF_BASIC)
 
         setSetting("board", 4);

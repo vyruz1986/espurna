@@ -327,6 +327,9 @@ void setup() {
     #if HOMEASSISTANT_SUPPORT
         haSetup();
     #endif
+    #if PIR_SUPPORT
+        pirSetup();
+    #endif
 
     // Prepare configuration for version 2.0
     hwUpwardsCompatibility();
@@ -390,6 +393,9 @@ void loop() {
     #endif
     #if IR_SUPPORT
         irLoop();
+    #endif
+    #if PIR_SUPPORT
+        pirLoop();
     #endif
 
     // Power saving delay

@@ -142,6 +142,29 @@
 #endif
 
 //--------------------------------------------------------------------------------
+// PIR Motion sensor
+// Enable support by passing PIR_SUPPORT=1 build flag
+//--------------------------------------------------------------------------------
+
+#ifndef PIR_SUPPORT
+#define PIR_SUPPORT                 0
+#endif
+
+#ifndef PIR_PIN
+#define PIR_PIN                     12
+#endif
+
+#ifndef PIR_PULLUP
+#define PIR_PULLUP                  0
+#endif
+
+#ifndef PIR_UPDATE_INTERVAL
+#define PIR_UPDATE_INTERVAL         60000
+#endif
+
+#define PIR_TOPIC                "motion"
+
+//--------------------------------------------------------------------------------
 // Internal power montior
 // Enable support by passing ADC_VCC_ENABLED=1 build flag
 // Do not enable this if using the analog GPIO for any other thing

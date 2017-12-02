@@ -64,6 +64,55 @@
     #define LED1_PIN            2
     #define LED1_PIN_INVERSE    1
 
+#elif defined(WEMOS_D1_MINI_DHT22SHIELD)
+
+    // Info
+    #define MANUFACTURER        "WEMOS"
+    #define DEVICE              "D1_MINI_DHT22SHIELD"
+
+    // Buttons
+    // No buttons on the D1 MINI alone, but defining it without adding a button doen't create problems
+    #define BUTTON1_PIN         0   // Connect a pushbutton between D3 and GND,
+                                    // it's the same as using a Wemos one button shield
+    #define BUTTON1_MODE        BUTTON_PUSHBUTTON | BUTTON_DEFAULT_HIGH
+    #define BUTTON1_RELAY       1
+
+    // Sensors
+    #define DHT_SUPPORT         1
+    #define DHT_PIN             2
+    #define DHT_TYPE            DHT22
+
+    // LEDs
+    #define LED1_PIN            2
+    #define LED1_PIN_INVERSE    1
+    
+#elif defined(WEMOS_D1_MINI_DHT22PIRSHIELD)
+
+    // Info
+    #define MANUFACTURER        "WEMOS"
+    #define DEVICE              "D1_MINI_DHT22PIRSHIELD"
+
+    // Buttons
+    // No buttons on the D1 MINI alone, but defining it without adding a button doen't create problems
+    #define BUTTON1_PIN         0   // Connect a pushbutton between D3 and GND,
+                                    // it's the same as using a Wemos one button shield
+    #define BUTTON1_MODE        BUTTON_PUSHBUTTON | BUTTON_DEFAULT_HIGH
+    #define BUTTON1_RELAY       1
+
+    // Sensors
+    #define DHT_SUPPORT         1
+    #define DHT_PIN             2
+    #define DHT_TYPE            DHT22
+
+    #define PIR_SUPPORT         1
+    #define PIR_PIN             12  //PIR Sensor connected to D6
+
+    // LEDs
+    #define LED1_PIN            2
+    #define LED1_PIN_INVERSE    1
+    
+
+
 // -----------------------------------------------------------------------------
 // ESPurna
 // -----------------------------------------------------------------------------

@@ -380,8 +380,8 @@ void setup() {
     #if HOMEASSISTANT_SUPPORT
         haSetup();
     #endif
-    #if SENSOR_SUPPORT
-        sensorSetup();
+    #if PIR_SUPPORT
+        pirSetup();
     #endif
 
     // Prepare configuration for version 2.0
@@ -435,8 +435,8 @@ void loop() {
     #if IR_SUPPORT
         irLoop();
     #endif
-    #if SENSOR_SUPPORT
-        sensorLoop();
+    #if PIR_SUPPORT
+        pirLoop();
     #endif
 
     // Power saving delay

@@ -197,6 +197,13 @@ PROGMEM const char* const custom_reset_string[] = {
 #define BUTTON_MODE_FACTORY         7
 
 //------------------------------------------------------------------------------
+// PIR
+//------------------------------------------------------------------------------
+
+#define PIR_EVENT_NONE      0
+#define PIR_EVENT_DETECTING 1
+
+//------------------------------------------------------------------------------
 // RELAY
 //------------------------------------------------------------------------------
 
@@ -473,6 +480,9 @@ PROGMEM const char* const custom_reset_string[] = {
 #define MQTT_TOPIC_BRIGHTNESS   "brightness"
 #define MQTT_TOPIC_MIRED        "mired"
 #define MQTT_TOPIC_KELVIN       "kelvin"
+
+// PIR module
+#define MQTT_TOPIC_PIR          "motion"
 
 #define MQTT_STATUS_ONLINE      "1"         // Value for the device ON message
 #define MQTT_STATUS_OFFLINE     "0"         // Value for the device OFF message (will)

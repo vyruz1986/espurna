@@ -64,6 +64,20 @@ void migrate() {
             setSetting("relayGPIO", 0, 5);
             setSetting("relayType", 0, RELAY_TYPE_NORMAL);
 
+        #elif defined(WEMOS_D1_MINI_DHT22SHIELD)
+
+            setSetting("board", 3);
+            setSetting("ledGPIO", 1, 2);
+            setSetting("ledLogic", 1, 1);
+            setSetting("btnGPIO", 1, 0);
+
+        #elif defined(WEMOS_D1_MINI_DHT22PIRSHIELD)
+
+            setSetting("board", 3);
+            setSetting("ledGPIO", 1, 2);
+            setSetting("ledLogic", 1, 1);
+            setSetting("btnGPIO", 1, 0);
+
         #elif defined(ITEAD_SONOFF_BASIC)
 
             setSetting("board", 4);
